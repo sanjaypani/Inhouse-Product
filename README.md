@@ -1,3 +1,8 @@
+# Prerequisite
+
+1. install node
+2. install angular-cli
+
 # Todo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.11.
