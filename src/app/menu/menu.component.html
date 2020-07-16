@@ -1,0 +1,19 @@
+<header>
+  <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+
+    <div>
+      <a class="navbar-brand" href="https://gmail.com" >gmail</a>
+    </div>
+
+      <ul class="navbar-nav mr-auto">
+        <li><a *ngIf="service.isUserLoggedIn()" routerLink="/welcome/sanjay" class="nav-link">Home</a> </li>
+        <li><a *ngIf="service.isUserLoggedIn()" routerLink="/upload" class="nav-link">Todo</a> </li>
+      </ul>
+
+    <ul class="nav navbar-nav nav-right">
+      <li><a *ngIf="!service.isUserLoggedIn()" routerLink="/login" class="nav-link">Login</a> </li>
+      <li><a *ngIf="service.isUserLoggedIn()" routerLink="/logout" class="nav-link">Logout</a> </li>
+    </ul>
+  </nav>
+
+</header>
